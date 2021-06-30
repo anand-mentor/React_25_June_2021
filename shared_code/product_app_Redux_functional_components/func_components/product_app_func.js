@@ -10,33 +10,6 @@ const ProductAppFunc = (props)=>{
     let renderForm = useSelector((state)=> state.renderForm);
     let selected_product = useSelector((state)=> state.selectedProduct);
     console.log('ProductAppFunc called');
-    //const [products, setProducts] = useState([]);
-    //const [renderForm, setRenderForm] = useState('ADD_PRODUCT');
-    //const [selected_product, setSelectedProduct] = useState({});
-/*
-    const addProduct = (product)=> {
-        product.id = products.length + 1;
-        products.push(product);
-        let copyOfProducts = [...products];
-        setProducts(copyOfProducts);
-        setRenderForm('ADD_PRODUCT');
-    }
-    
-    const renderAddProductForm = (product) => {
-        setRenderForm('ADD_PRODUCT');
-    }
-*/    
-/*
-    const renderEditProductForm = (product) => {
-        setRenderForm('EDIT_PRODUCT');
-        setSelectedProduct(product);
-    }
-    const removeProductFromList = (index) => {
-        products.splice(index, 1);
-        let productListCopy = [...products];
-        setProducts(productListCopy);
-    }
-*/
 
     if (renderForm === 'ADD_PRODUCT')  {
         return <div>
