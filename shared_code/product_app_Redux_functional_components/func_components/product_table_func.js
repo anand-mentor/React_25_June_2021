@@ -6,7 +6,6 @@ const ProductTableFunc = (props) => {
 
     let dispatcher = useDispatch();
     let products = useSelector((state)=>state.products);
-    console.log('products: ', products);
 
     const editProduct = (product) => {
         dispatcher(EditProductAction(product))

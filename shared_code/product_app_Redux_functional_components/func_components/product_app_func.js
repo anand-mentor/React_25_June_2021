@@ -15,8 +15,7 @@ const ProductAppFunc = (props)=>{
         <h1><center>Product Application</center></h1>
         <ProductFormFunc/>
         <br></br>
-        <ProductTableFunc products={products}  
-            ></ProductTableFunc>
+        <ProductTableFunc/>  
         </div>
     }
     else if (renderForm === 'EDIT_PRODUCT')  {
