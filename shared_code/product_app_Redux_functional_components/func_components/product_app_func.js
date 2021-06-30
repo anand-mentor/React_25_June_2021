@@ -9,7 +9,6 @@ const ProductAppFunc = (props)=>{
     let products = useSelector((state)=> state.products);
     let renderForm = useSelector((state)=> state.renderForm);
     let selected_product = useSelector((state)=> state.selectedProduct);
-    console.log('ProductAppFunc called');
 
     if (renderForm === 'ADD_PRODUCT')  {
         return <div>
